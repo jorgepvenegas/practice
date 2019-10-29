@@ -9,7 +9,6 @@ const VALUES = {
 }
 
 const romanToInt = function(s) {
-
   let total = 0;
   let i = 0;
   
@@ -48,9 +47,7 @@ const romanToInt = function(s) {
       
       i++;
   }
-  
   return total;
-  
 };
 
 console.log(romanToInt("LVIII")); //58

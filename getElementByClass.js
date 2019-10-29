@@ -4,7 +4,6 @@
 
 function getByClassName(element, className) {
   let nodes = [];
-  
   function recursiveNavigation(element, nodes) {
     if(!element) return nodes;
     
