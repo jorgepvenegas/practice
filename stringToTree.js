@@ -1,5 +1,5 @@
 /**
- *  Because front end engineering is about thit kind of stuff, right?
+ *  Because front end engineering is about this kind of stuff, right?
  */
 
 class Node {
