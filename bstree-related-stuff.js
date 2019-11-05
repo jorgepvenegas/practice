@@ -97,8 +97,27 @@ const maxDepth = node => {
   return 1 + Math.max(maxDepth(node.left), maxDepth(node.right)) 
 }
 
+// lowest common ancestor
+const lowestCommonAncestor = (node, a, b) => {
+  let current = node;
+  while(current) {
+    if(a < current.value && b < current.value) {
+      // go left
+      current = node.left;
+    }
+    else if(a > current.value && b > current.value) {
+      // go right
+      current = current.right;
+    }
+    else {
+      return current;
+    }
+  }
+}
+
 
 // const tree = new BSTree();
+
 // tree.insert(50);
 // tree.insert(30);
 // tree.insert(60);
