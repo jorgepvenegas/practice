@@ -23,10 +23,3 @@ const test = "this is a new new new new input in a new output"
 
 console.log(removeConsecutiveDuplicates(test));
 console.log(removeDuplicates(test));
-
-// [0, 1, 2, 3, [1, 2, 3], 0]
-function flattenArray(arr){
-  return arr.reduce( (curr, next) => {
-    return curr.concat( Array.isArray(next) ? flattenArray(next) : next )
-  }, [])
-}
