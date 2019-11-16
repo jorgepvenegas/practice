@@ -88,7 +88,7 @@ t.add("caroline");
 t.add("carl");
 t.add("carmen");
 t.add("jaime");
-t.add("juan")
+t.add("juan");
 t.add("alison");
 t.add("alice");
 
