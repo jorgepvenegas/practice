@@ -1,12 +1,14 @@
-// basic throttle implementation
+// basic throttle implementation (trailing)
 
 function Throttle(fn, time) {
   let nextTimeout = null;
+  
+  function delayed() {
+    nextTimeout = null;
+    fn();
+  }
+
   return function() {
-    function delayed() {
-      nextTimeout = null;
-      fn();
-    }
     if(!nextTimeout) {
       nextTimeout = setTimeout(delayed, time);
     }
