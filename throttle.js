@@ -22,7 +22,7 @@ const regularFunction = () => {
 // if 'throttledFn' is executed 100 times within 2000ms, it will run just twice
 const throttledFn = new Throttle(regularFunction, 1000)
 
-// Create an interval that runs every 100 ms
+// Create an interval that runs every 300 ms
 const myInterval = setInterval(() => {
   // console.log will be executed every 300ms
   console.log(new Date().toString());
