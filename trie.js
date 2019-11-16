@@ -92,10 +92,25 @@ t.add("juan");
 t.add("alison");
 t.add("alice");
 
-const node = t.getMatch("alis");
+const node = t.getMatch("j");
 
 if(node) {
   t.getTerms(node, node => {
     console.log(node.term);
   });
 }
+
+/*
+j
+jo
+ja
+ju
+jor
+jai
+jua
+jorg
+jaim
+juan
+jorge
+jaime
+*/
